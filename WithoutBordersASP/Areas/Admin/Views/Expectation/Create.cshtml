@@ -1,0 +1,20 @@
+﻿@model WithoutBorders.Data.Entities.Expectation
+
+@{
+    ViewBag.controller = "Master";
+    ViewBag.action = "All";
+    ViewBag.Title = "Створити Очікування";
+}
+
+<div class="expectation__one">
+    <form asp-controller="Expectation" asp-action="CreatePost" asp-route-redirectId="@ViewBag.Id" method="POST">
+        <div class="elementt__one">
+            <input asp-for="Id" type="hidden">
+            <input asp-for="MainId" value="@ViewBag.mainId" type="hidden">
+            <input asp-for="Expression" type="text">
+            <div class="butt">
+                <button>Готово</button>
+            </div>
+        </div>
+    </form>
+</div>

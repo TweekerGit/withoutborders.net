@@ -1,0 +1,31 @@
+﻿@model WithoutBordersASP.Models.Dto.CampDto
+@{
+    // foreach (var i in yearsList)
+    // {
+    //     Console.WriteLine("===================");
+    //     Console.WriteLine($"Key => {i.Key}\nValue => {i.Value}");
+    //     Console.WriteLine("===================");
+    // }
+    ViewBag.action = "All";
+    ViewBag.controller = "Year";
+    ViewBag.Title = "Редагувати Табір";
+}
+<!-- Редактувати табір -->
+<form asp-area="Admin" asp-controller="Camp" asp-action="EditPost" method="POST">
+    <div class="campEdit">
+        <input asp-for="Id" type="hidden">
+        <input asp-for="YearId" type="hidden">
+        <div class="campItem">
+            <p class="whatIsIt">Назва:</p>
+            <input asp-for="Name" type="text">
+        </div>
+        <div class="campItem">
+            <p class="whatIsIt">Місце:</p>
+            <input asp-for="Place" type="text">
+        </div>
+        <input asp-for="YearId" type="hidden">
+        <div class="campButtons">
+            <button type="submit">Готово</button>
+        </div>
+    </div>
+</form>

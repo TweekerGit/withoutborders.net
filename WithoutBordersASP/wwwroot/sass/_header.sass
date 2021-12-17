@@ -1,0 +1,129 @@
+$font25px: 25px
+    
+header
+    margin: 0 auto
+    background: white
+    @media screen and ( max-width: 1200px )
+        display: flex
+        justify-content: flex-end
+    .burger
+        display: none
+        @media screen and ( max-width: 1200px )
+            width: 100%
+            display: block
+            .content
+                display: flex
+                justify-content: space-between
+                .logo
+                    margin: 20px 0 20px 20px
+                    img
+                        width: 65px
+                .lines
+                    margin: 20px 20px 20px 0
+    .neBurger
+        width: 80%
+        margin: 0 auto
+        display: flex
+        justify-content: space-around
+        padding: 10px 0
+        .header-element
+            width: 100%
+            display: flex
+            justify-content: space-around
+            padding: 10px 0
+            width: 20%
+            @media screen and ( max-width: 1200px )
+                width: 100%
+            padding: 34px 0
+            @media screen and ( max-width: 630px )
+                padding: 15px 0
+            .navElement
+                white-space: nowrap
+                text-align: center
+                font-size: $font25px
+                text-decoration: none
+                color: black
+                @media screen and ( max-width: 630px )
+                    font-size: 20px
+                cursor: pointer
+            .years__hidden
+                display: none
+                position: absolute
+                
+            .years__hidden.showList
+                display: flex
+                flex-direction: column
+                z-index: 9999
+                top: 75px
+                background-color: #ebebeb
+                @media screen and ( max-width: 630px )
+                    top: 40px
+                li
+                    text-align: center 
+                    padding: 10px 120px
+                    @media screen and ( max-width: 630px )
+                        padding: 10px 60px
+                    font-size: $font25px
+                    position: relative
+                    .year
+                        cursor: pointer
+                        text-decoration: none
+                        color: black
+                    .list__element__hidden
+                        display: none
+                        width: 100%
+                        background-color: black
+                        position: absolute
+                        left: 287px
+                        @media screen and ( max-width: 1200px )
+                            left: -287px
+                        @media screen and ( max-width: 630px )
+                            left: -148px
+                        top: 0 
+                        a   
+                            margin: 10px 0
+                            color: white
+                            text-decoration: none
+                li:hover .list__element__hidden
+                    display: flex
+                    flex-direction: column
+                        
+        .mainList
+            position: relative
+        .logo
+            width: 100px
+            @media screen and ( max-width: 1200px )
+                display: none
+        @media screen and ( max-width: 1200px )
+            display: block
+            opacity: 90%
+            position: absolute
+            top: 65px
+            left: 0
+            background: #f5f5f5
+            box-shadow: #ccc
+            width: 50%
+            box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17)
+            right: -200%;
+            height: 900px   
+            transition: all 0.6s ease;
+
+.burger.open-menu span 
+    opacity: 0
+    transition: 0.5s
+
+.burger.open-menu:before
+    transform: rotate(38deg)
+    top: 16px
+    transition: 0.4s
+
+.burger.open-menu:after
+    transform: rotate(-38deg)
+    bottom: 16px
+    transition: 0.4s
+
+.neBurger.open-menu
+        right: -50%
+
+.displayBlock
+    display: block

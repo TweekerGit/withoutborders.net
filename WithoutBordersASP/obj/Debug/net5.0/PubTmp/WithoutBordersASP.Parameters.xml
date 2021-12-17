@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="https://locachicamp.com.ua/" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\Програмування\\ASP\ \.Net\\2021\\WithoutBordersASP\\WithoutBordersASP\\bin\\Debug\\net5\.0\\publish\\$" />
+  </parameter>
+</parameters>

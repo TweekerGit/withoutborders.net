@@ -1,0 +1,42 @@
+﻿@model WithoutBordersASP.Models.Dto.CampDto
+
+@{
+    ViewBag.Title = "Фотографії";
+}
+
+<!-- Блок з фотками -->
+<div class="main">
+    <div class="campInfo">
+        <div>
+            <h2 class="place">@Model.Place</h2>
+            <h2 class="year">@Model.Year.Name</h2>
+        </div>
+        <p class="season">Назва сезону: @Model.Name</p>
+    </div>
+    <div class="photoLines">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            @foreach (var photo in Model.Photos)
+            {
+                <div class="grid-item">
+                    <img src="@photo.Url" alt="wrong">
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Script
+{
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    
+    <script>
+        $('.grid').masonry({
+      // options
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+    </script>
+}

@@ -1,0 +1,55 @@
+﻿@using WithoutBorders.Core.Repository
+@using WithoutBorders.Data.Entities
+@inject IRepository<int, Year> YearRepo
+
+<!-- Шапка сайту -->
+<header id="header">
+    <div class="burger">
+        <div class="content">
+            <div class="logo">
+                <a asp-controller="Home" asp-action="Index">
+                    <img src="~/images/Logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="lines">
+                <img src="~/images/threeLines.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="neBurger">
+        <div class="header-element">
+            <a class="navElement" data-target="#willBe" href="/#willBe">Що на вас чекає?</a>
+        </div>
+        <div class="header-element">
+            <a class="navElement" data-target="#form" href="/#form">Хочу з вами</a>
+        </div>
+        <div class="logo">
+            <a asp-controller="Home" asp-action="Index">
+                <img src="~/images/Logo.svg" alt="logo">
+            </a>
+        </div>
+        <div class="header-element mainList">
+            <a class="navElement" id="toClick">Попередні роки</a>
+            <ul class="years__hidden">
+
+                @foreach (Year year in await YearRepo.GetAllAsync(y => y.Camps))
+                {
+                    <li>
+                        <p class="year">
+                            <span>@year.Name</span>
+                            <div class="list__element__hidden">
+                                @foreach (Camp camp in year.Camps)
+                                {
+                                    <a asp-controller="Photo" asp-action="Photos" asp-route-campId="@camp.Id">@camp.Place</a>
+                                }
+                            </div>
+                        </p>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="header-element">
+            <a asp-controller="Home" asp-action="Mentors" class="navElement">Наставники</a>
+        </div>
+    </div>
+</header>

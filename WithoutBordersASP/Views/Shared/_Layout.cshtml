@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    @await Html.PartialAsync("MetatagsPartial")
+    @await Html.PartialAsync("CssPartial")
+    @await RenderSectionAsync("Header", false)
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+    @await Html.PartialAsync("HeaderPartial")
+    
+    <div>
+        @RenderBody()
+    </div>
+
+    @await Html.PartialAsync("FooterPartial")
+    
+    @await Html.PartialAsync("JsPartial")
+    @await RenderSectionAsync("Script", false)
+</body>
+
+</html>

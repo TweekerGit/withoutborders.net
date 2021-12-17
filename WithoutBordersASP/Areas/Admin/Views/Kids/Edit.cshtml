@@ -1,0 +1,72 @@
+﻿@model WithoutBorders.Data.Entities.Kid
+
+@{
+    ViewBag.controller = "Kids";
+    ViewBag.action = "All";
+    ViewBag.Title = "Змінити Дані";
+}
+
+<div class="kid__about">
+    <div class="kid__titles">
+        <div class="kid__title">
+            <p>ID</p>
+        </div>
+        <div class="kid__title">
+            <p>Ім'я</p>
+        </div>
+        <div class="kid__title">
+            <p>Прізвище</p>
+        </div>
+        <div class="kid__title">
+            <p>Стать</p>
+        </div>
+        <div class="kid__title">
+            <p>Вік</p>
+        </div>
+        <div class="kid__title">
+            <p>Алергія</p>
+        </div>
+        <div class="kid__title">
+            <p>Номер телефону</p>
+        </div>
+    </div>
+    <div class="kids">
+        <div class="kid">
+            <form asp-area="Admin" asp-controller="Kids" asp-action="EditPost" method="POST">
+                <div class="kid__buttons">
+                    <button type="submit">Готово</button>
+                </div>
+                <div class="kid__information">
+                    <div class="kid__info">
+                        <input asp-for="Id" type="hidden">
+                        <p>@Model.Id</p>
+                    </div>
+                    <div class="kid__info">
+                        @* @Html.EditorFor(model => model.Name) *@
+                        <input asp-for="Name" type="text">
+                    </div>
+                    <div class="kid__info">
+                        @* @Html.EditorFor(model => model.Surname) *@
+                        <input asp-for="Surname" type="text">
+                    </div>
+                    <div class="kid__info">
+                        @* @Html.EditorFor(model => model.Sex) *@
+                        <input asp-for="Sex" type="text">
+                    </div>
+                    <div class="kid__info">
+                        @* @Html.EditorFor(model => model.Age) *@
+                        <input asp-for="Age" type="text">
+                    </div>
+                    <div class="kid__info">
+                        @* @Html.EditorFor(model => model.Alergy) *@
+                        <input asp-for="Alergy" type="text">
+                    </div>
+                    <div class="kid__info">
+                        <input asp-for="Number" type="text">
+                        @* @Html.EditorFor(model => model.Number) *@
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@model List<WithoutBorders.Data.Entities.Mentor>
+
+@{
+    ViewBag.Title = "Наставники";
+}
+
+<!-- Блок з наставниками -->
+<div class="mentorWrapper">
+    @for (int i = 0; i < Model.Count(); i++)
+    {
+        if (i % 2 == 0)
+        {
+            <div class="leftPhoto">
+                <div class="allInformation">
+                    <div class="photo">
+                        <img src="@Model[i].PhotoUrl" alt="mentorPhoto">
+                    </div>
+                    <div class="info">
+                        <h2>@Model[i].Name</h2>
+                        <p class="hoby"><span>Хоббі</span>: @Model[i].Hobby</p>
+                        <p class="about">@Model[i].About</p>
+                    </div>
+                </div>
+                <div class="fishes">
+                    <img src="~/images/FishesLeft.svg" alt="fishes">
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="rightPhoto">
+                <div class="allInformation">
+                    <div class="photo">
+                        <img src="@Model[i].PhotoUrl" alt="mentorPhoto">
+                    </div>
+                    <div class="info">
+                        <h2>@Model[i].Name</h2>
+                        <p class="hoby"><span>Хоббі</span>: @Model[i].Hobby</p>
+                        <p class="about">@Model[i].About</p>
+                    </div>
+                </div>
+                <div class="fishes">
+                    <img src="~/images/FishesRight.svg" alt="fishes">
+                </div>
+            </div>
+        }
+    }
+</div>

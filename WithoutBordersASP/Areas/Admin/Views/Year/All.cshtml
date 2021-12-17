@@ -1,0 +1,55 @@
+﻿@model IEnumerable<WithoutBordersASP.Models.Dto.YearDto>
+
+@{
+    ViewBag.controller = "Main";
+    ViewBag.action = "Index";
+    ViewBag.Title = "Роки";
+}
+
+<div class="yearsAndCamps">
+    <div class="addYear">
+        <a asp-controller="Year" asp-action="Create">Добавити Рік</a>
+    </div>
+    @if (Model.Any())
+    {
+        foreach (var year in Model)
+        {
+            <div class="year">
+                <div class="yearInfo">
+                    <p>
+                        <span>Рік: </span>@year.Name
+                    </p>
+                    <div class="yearButtons">
+                        <a asp-controller="Year" asp-action="Edit" asp-route-id="@year.Id">Змінити</a>
+                        <a onclick="return confirm('Ви впевнені, що хочете видалити цілий рік?');"
+                           asp-controller="Year" asp-action="Delete" asp-route-deleteId="@year.Id">Видалити</a>
+                        <a asp-controller="Camp" asp-action="Create" asp-route-yearID="@year.Id">Добавити табір</a>
+                    </div>
+                </div>
+                <div class="camps">
+                    @if (year.Camps.Any())
+                    {
+                        foreach (var camp in year.Camps)
+                        {
+                            <div class="camp">
+                                <div class="campItem">
+                                    <p class="whatIsIt">Назва:</p>
+                                    <p>@camp.Name</p>
+                                </div>
+                                <div class="campItem">
+                                    <p class="whatIsIt">Місце:</p>
+                                    <p>@camp.Place</p>
+                                </div>
+                                <div class="campButtons">
+                                    <a asp-controller="Camp" asp-action="Edit" asp-route-yearId="@year.Id" asp-route-codeWord="@camp.Place">Змінити</a>
+                                    <a onclick="return confirm('Ви впевнені, що хочете видалити табір?');"
+                                       asp-controller="Camp" asp-action="Delete" asp-route-deleteId="@camp.Id">Видалити</a>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>

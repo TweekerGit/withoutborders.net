@@ -1,0 +1,28 @@
+﻿@model IEnumerable<WithoutBordersASP.Models.Dto.YearDto>
+
+@{
+    ViewBag.controller = "Main";
+    ViewBag.action = "Index";
+    ViewBag.Title = "Виберіть Табір";
+}
+
+<div class="yearPhoto">
+    @if (Model.Any())
+    {
+        foreach (var year in Model)
+        {
+            <div class="year">
+                <div>
+                    <p>@year.Name</p>
+                </div>
+                <hr>
+                <div class="camps">
+                    @foreach (var camp in year.Camps)
+                    {
+                        <a asp-action="One" asp-route-id="@camp.Id">@camp.Place</a>
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>

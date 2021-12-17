@@ -1,0 +1,1659 @@
+@font-face {
+  font-family: Colus;
+  src: url(../fonts/Colus-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Extatica;
+  src: url(../fonts/Extatica-Light.ttf) format("truetype");
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page header {
+  padding: 10px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page header .logo {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  display: flex;
+  justify-self: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page header .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: Colus;
+  font-size: 25px;
+}
+
+.page header .logo a img {
+  margin-left: 10px;
+  width: 70px;
+  height: 50px;
+}
+
+.page header .back {
+  margin-right: 30px;
+  width: 15%;
+  justify-self: flex-end;
+}
+
+.page header .back a {
+  width: 100%;
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page header hr {
+  width: 80%;
+}
+
+.page .wrapper .buttons {
+  margin: 240px auto;
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .wrapper .buttons a {
+  text-align: center;
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.page footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: black;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page footer div {
+  margin: 10px 20px;
+}
+
+.page footer div .logout {
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: white;
+  color: black;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page footer div a img {
+  width: 100px;
+  height: 70px;
+}
+
+.page .selectedEdit {
+  width: 20%;
+  padding: 15px;
+  background-color: lightgray;
+  margin: 100px auto;
+}
+
+.page .selectedEdit form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .selectedEdit form p {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.page .selectedEdit form select {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+}
+
+.page .selectedEdit form button {
+  color: white;
+  background-color: black;
+  font-family: Extatica;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  font-size: 25px;
+  padding: 5px 5px;
+  margin: 20px 0;
+  margin: 15px 0 0 0;
+}
+
+.page .mainEdit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.page .mainEdit .addMain div {
+  width: 100%;
+}
+
+.page .mainEdit .addMain div a {
+  margin: 0 10px;
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .mainEdit .line {
+  background-color: lightgray;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.page .mainEdit .line .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .mainEdit .line .data .up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.page .mainEdit .line .data .up .id {
+  width: 27.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .mainEdit .line .data .up .id input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  width: 15%;
+  text-align: center;
+}
+
+.page .mainEdit .line .data .up .id .whatIsIt {
+  font-weight: 700;
+}
+
+.page .mainEdit .line .data .up .id p {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .mainEdit .line .data .up .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 27.5%;
+}
+
+.page .mainEdit .line .data .up .item .whatIsIt {
+  font-weight: 700;
+}
+
+.page .mainEdit .line .data .up .item p {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .mainEdit .line .data .up .item input, .page .mainEdit .line .data .up .item textarea {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+}
+
+.page .mainEdit .line .data .up .item textarea {
+  height: 150px;
+  width: 100%;
+}
+
+.page .mainEdit .line .data .middle {
+  margin: 20px 0;
+}
+
+.page .mainEdit .line .data .middle .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .mainEdit .line .data .middle .item .whatIsIt {
+  font-weight: 700;
+}
+
+.page .mainEdit .line .data .middle .item p {
+  text-align: center;
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .mainEdit .line .data .middle .item textarea {
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  resize: none;
+  width: 65%;
+  font-family: Extatica;
+  font-size: 25px;
+  height: 200px;
+}
+
+.page .mainEdit .line .data .down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.page .mainEdit .line .data .down .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 27.5%;
+}
+
+.page .mainEdit .line .data .down .item .whatIsIt {
+  font-weight: 700;
+}
+
+.page .mainEdit .line .data .down .item p {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .mainEdit .line .data .down .item input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+}
+
+.page .mainEdit .line .data .down .item img {
+  margin: 15px;
+  max-width: 60%;
+  max-height: 700px;
+}
+
+.page .mainEdit .line hr {
+  width: 75%;
+}
+
+.page .mainEdit .line .expectations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .mainEdit .line .expectations .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.page .mainEdit .line .expectations .title p {
+  font-weight: 700;
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .mainEdit .line .expectations .elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.page .mainEdit .line .expectations .elements .element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 5px 0;
+  width: 30%;
+}
+
+.page .mainEdit .line .expectations .elements .element input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  margin: 10px 0;
+}
+
+.page .mainEdit .line .expectations .elements .element p {
+  width: 100%;
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid;
+}
+
+.page .mainEdit .line .expectations .elements .element .but {
+  margin-top: 5px;
+}
+
+.page .mainEdit .line .expectations .elements .element .but a {
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .mainEdit .line .expectations .elButtons {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.page .mainEdit .line .expectations .elButtons div {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.page .mainEdit .line .expectations .elButtons div a {
+  text-align: center;
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .mainEdit .line .expectations .elButtons div button {
+  color: white;
+  background-color: black;
+  font-family: Extatica;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  font-size: 25px;
+  padding: 5px 5px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.page .mainEdit .line .editButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.page .mainEdit .line .editButton div {
+  margin-right: 20px;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.page .mainEdit .line .editButton div button {
+  color: white;
+  background-color: black;
+  font-family: Extatica;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  font-size: 25px;
+  padding: 5px 5px;
+  margin: 20px 0;
+}
+
+.page .mainEdit .line .editButton div a {
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .expectations {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .expectations .title .whatIsIt {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.page .expectations .elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.page .expectations .elements .elementt {
+  background-color: lightgray;
+  padding: 20px 0;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 24%;
+}
+
+.page .expectations .elements .elementt input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  width: 85%;
+}
+
+.page .expectations .elements .elementt p {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .expectations .elements .elementt .but {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .expectations .elements .elementt .but a {
+  text-align: center;
+  margin: 5px 0;
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .expectations .elButton {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.page .expectations .elButton a {
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: gray;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .expectation__one {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.page .expectation__one .elementt__one {
+  margin: 10px;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.page .expectation__one .elementt__one input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  margin: 10px 0;
+}
+
+.page .expectation__one .elementt__one .butt button {
+  color: white;
+  background-color: black;
+  font-family: Extatica;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  font-size: 25px;
+  padding: 5px 5px;
+  margin: 20px 0;
+  margin: 0;
+}
+
+.page .yearsAndCamps {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .yearsAndCamps .addYear {
+  margin: 10px 0 5px 0;
+}
+
+.page .yearsAndCamps .addYear a {
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .yearsAndCamps .year {
+  border: 5px dashed black;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.page .yearsAndCamps .year .yearInfo {
+  margin-left: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .yearsAndCamps .year .yearInfo p {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .yearsAndCamps .year .yearInfo p span {
+  font-weight: 700;
+}
+
+.page .yearsAndCamps .year .yearInfo .yearButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .yearsAndCamps .year .yearInfo .yearButtons a {
+  margin: 5px 0;
+  text-align: center;
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .yearsAndCamps .year .camps {
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 60%;
+}
+
+.page .yearsAndCamps .year .camps .camp {
+  border: 7px ridge;
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .yearsAndCamps .year .camps .camp .campItem {
+  width: 33%;
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .yearsAndCamps .year .camps .camp .campItem .whatIsIt {
+  font-weight: 700;
+}
+
+.page .yearsAndCamps .year .camps .camp .campItem p {
+  text-align: center;
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .yearsAndCamps .year .camps .camp .campButtons {
+  width: 33%;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .yearsAndCamps .year .camps .camp .campButtons a {
+  margin: 5px 0;
+  text-align: center;
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .campEdit {
+  margin: 280px auto;
+  width: 80%;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.page .campEdit .campItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .campEdit .campItem p {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .campEdit .campItem .whatIsIt {
+  font-weight: 700;
+}
+
+.page .campEdit .campItem input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+}
+
+.page .campEdit .campItem select {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  width: 280px;
+}
+
+.page .campEdit .campButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .campEdit .campButtons button {
+  color: white;
+  background-color: black;
+  font-family: Extatica;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  font-size: 25px;
+  padding: 5px 5px;
+  margin: 20px 0;
+}
+
+.page .campEdit .campButtons a {
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .yearEdit {
+  margin: 280px auto;
+  width: 60%;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.page .yearEdit .yearItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .yearEdit .yearItem p {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .yearEdit .yearItem .whatIsIt {
+  font-weight: 700;
+}
+
+.page .yearEdit .yearItem input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+}
+
+.page .yearEdit .yearButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .yearEdit .yearButtons button {
+  color: white;
+  background-color: black;
+  font-family: Extatica;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  font-size: 25px;
+  padding: 5px 5px;
+  margin: 20px 0;
+}
+
+.page .yearEdit .yearButtons a {
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .photoEdit {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.page .photoEdit .addPhoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0;
+}
+
+.page .photoEdit .addPhoto button {
+  color: white;
+  background-color: black;
+  font-family: Extatica;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  font-size: 25px;
+  padding: 5px 5px;
+  margin: 20px 0;
+  margin: 0 10px;
+  padding: 0 40px;
+}
+
+.page .photoEdit .addPhoto a {
+  margin: 0 10px;
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .photoEdit .grid .grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .photoEdit .grid .grid-item input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  background-color: lightgray;
+  margin: 10px 0;
+  width: 75%;
+}
+
+.page .photoEdit .grid .grid-item a {
+  margin: 5px 0;
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .photoAdd {
+  width: 40%;
+  margin: 300px auto;
+  background-color: lightgray;
+}
+
+.page .photoAdd form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .photoAdd form p {
+  text-align: center;
+  font-weight: 700;
+  margin: 10px 0;
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .photoAdd form input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.page .photoAdd form button {
+  color: white;
+  background-color: black;
+  font-family: Extatica;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  font-size: 25px;
+  padding: 5px 5px;
+  margin: 20px 0;
+  margin-bottom: 15px;
+  padding: 5px 40px;
+}
+
+.page .photoAdd form a {
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.page .yearPhoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.page .yearPhoto .year {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: lightgray;
+  width: 20%;
+}
+
+.page .yearPhoto .year div p {
+  text-align: center;
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .yearPhoto .year hr {
+  width: 80%;
+}
+
+.page .yearPhoto .year .camps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .yearPhoto .year .camps a {
+  text-align: center;
+  margin: 5px 0;
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .mentorsEdit {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.page .mentorsEdit .mentor {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.page .mentorsEdit .mentor .mentor__element {
+  width: 47%;
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .mentorsEdit .mentor .mentor__element img {
+  margin: 10px 0;
+  width: 30%;
+}
+
+.page .mentorsEdit .mentor .mentor__element .whatIsIt {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.page .mentorsEdit .mentor .mentor__element input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  width: 70%;
+}
+
+.page .mentorsEdit .mentor .mentor__element textarea {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  width: 70%;
+  resize: none;
+  text-align: center;
+}
+
+.page .mentorsEdit .mentor .mentor__button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.page .mentorsEdit .mentor .mentor__button button {
+  color: white;
+  background-color: black;
+  font-family: Extatica;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  font-size: 25px;
+  padding: 5px 5px;
+  margin: 20px 0;
+}
+
+.page .mentors {
+  width: 80%;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .mentors .addMentor {
+  margin: 10px 0;
+}
+
+.page .mentors .addMentor a {
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+}
+
+.page .mentors .mentor__one {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.page .mentors .mentor__one .one {
+  background-color: lightgray;
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.page .mentors .mentor__one .one .one__element {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .mentors .mentor__one .one .one__element p {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+  margin: 5px 0;
+}
+
+.page .mentors .mentor__one .one .one__element .whatIsIt {
+  font-weight: 700;
+}
+
+.page .mentors .mentor__one .one .one__element textarea {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  margin: 5px 0;
+  resize: none;
+  width: 70%;
+  text-align: center;
+}
+
+.page .mentors .mentor__one .one .one__element img {
+  width: 30%;
+}
+
+.page .mentors .mentor__one .one .one__button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.page .mentors .mentor__one .one .one__button a {
+  text-align: center;
+  margin: 15px 0;
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+  width: 40%;
+  padding: 5px 5px;
+}
+
+.page .kid__about {
+  width: 95%;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .kid__about .kid__count {
+  margin: 15px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.page .kid__about .kid__count p {
+  margin: 0 5px;
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.page .kid__about .kid__titles {
+  padding: 10px 5px;
+  background-color: lightgray;
+  width: 99%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.page .kid__about .kid__titles .kid__title {
+  width: 14%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .kid__about .kid__titles .kid__title p {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.page .kid__about .kids {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .kid__about .kids .kid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page .kid__about .kids .kid .kid__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.page .kid__about .kids .kid .kid__buttons a {
+  font-family: Extatica;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+  margin: 10px 5px 0;
+}
+
+.page .kid__about .kids .kid .kid__buttons button {
+  color: white;
+  background-color: black;
+  font-family: Extatica;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  font-size: 25px;
+  padding: 5px 5px;
+  margin: 20px 0;
+  margin: 10px 5px 0;
+}
+
+.page .kid__about .kids .kid .kid__information {
+  border: 15px ridge;
+  margin: 5px 0 10px;
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.page .kid__about .kids .kid .kid__information .kid__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 13%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page .kid__about .kids .kid .kid__information .kid__info p {
+  font-family: Extatica;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 8px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.page .kid__about .kids .kid .kid__information .kid__info input {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  margin: 3px 0;
+  font-size: 20px;
+}
+
+.page .kid__about .kids .kid .kid__information .kid__info textarea {
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  font-size: 25px;
+  font-family: Extatica;
+  height: 70px;
+  resize: none;
+  font-size: 20px;
+}
+
+.grid-item, .grid-sizer {
+  width: 33.3%;
+}
+
+.grid-item img {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .grid-sizer, .grid-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .grid-sizer, .grid-item {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

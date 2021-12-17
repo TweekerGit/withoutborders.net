@@ -1,0 +1,15 @@
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\bin\Release\net5.0\WithoutBorders.Data.Entities.deps.json
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\bin\Release\net5.0\WithoutBorders.Data.Entities.dll
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\bin\Release\net5.0\ref\WithoutBorders.Data.Entities.dll
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\bin\Release\net5.0\WithoutBorders.Data.Entities.pdb
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\bin\Release\net5.0\WithoutBorders.Core.dll
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\bin\Release\net5.0\WithoutBorders.Core.pdb
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\obj\Release\net5.0\WithoutBorders.Data.Entities.GeneratedMSBuildEditorConfig.editorconfig
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\obj\Release\net5.0\WithoutBorders.Data.Entities.AssemblyInfoInputs.cache
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\obj\Release\net5.0\WithoutBorders.Data.Entities.AssemblyInfo.cs
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\obj\Release\net5.0\WithoutBorders.Data.Entities.csproj.CoreCompileInputs.cache
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\obj\Release\net5.0\WithoutBorders.Data.Entities.csproj.CopyComplete
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\obj\Release\net5.0\WithoutBorders.Data.Entities.dll
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\obj\Release\net5.0\ref\WithoutBorders.Data.Entities.dll
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\obj\Release\net5.0\WithoutBorders.Data.Entities.pdb
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Data.Entities\obj\Release\net5.0\WithoutBorders.Data.Entities.csproj.AssemblyReference.cache

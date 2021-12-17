@@ -1,0 +1,76 @@
+﻿@model IEnumerable<WithoutBorders.Data.Entities.Kid>
+
+@{
+    ViewBag.controller = "Main";
+    ViewBag.action = "Index";
+    ViewBag.Title = "Діти";
+}
+
+<!-- Діти -->
+<div class="kid__about">
+    <div class="kid__count">
+        <p>Кількість дітей:</p>
+        <p>@ViewBag.allKids</p>
+    </div>
+    <div class="kid__titles">
+        <div class="kid__title">
+            <p>ID</p>
+        </div>
+        <div class="kid__title">
+            <p>Ім'я</p>
+        </div>
+        <div class="kid__title">
+            <p>Прізвище</p>
+        </div>
+        <div class="kid__title">
+            <p>Стать</p>
+        </div>
+        <div class="kid__title">
+            <p>Вік</p>
+        </div>
+        <div class="kid__title">
+            <p>Алергія</p>
+        </div>
+        <div class="kid__title">
+            <p>Номер телефону</p>
+        </div>
+    </div>
+    <div class="kids">
+        @if (Model.Any())
+        {
+            foreach (var kid in Model)
+            {
+                <div class="kid">
+                    <div class="kid__buttons">
+                        <a onclick="return confirm('Ви впевнені, що хочете видалити дитину зі списку?');"
+                           asp-controller="Kids" asp-action="Delete" asp-route-id="@kid.Id">Видалити</a>
+                        <a asp-controller="Kids" asp-action="Edit" asp-route-id="@kid.Id">Змінити</a>
+                    </div>
+                    <div class="kid__information">
+                        <div class="kid__info">
+                            <p>@kid.Id</p>
+                        </div>
+                        <div class="kid__info">
+                            <p>@kid.Name</p>
+                        </div>
+                        <div class="kid__info">
+                            <p>@kid.Surname</p>
+                        </div>
+                        <div class="kid__info">
+                            <p>@kid.Sex</p>
+                        </div>
+                        <div class="kid__info">
+                            <p>@kid.Age</p>
+                        </div>
+                        <div class="kid__info">
+                            <p>@kid.Alergy</p>
+                        </div>
+                        <div class="kid__info">
+                            <p>@kid.Number</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

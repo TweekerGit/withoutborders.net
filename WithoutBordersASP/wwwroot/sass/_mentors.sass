@@ -1,0 +1,85 @@
+$Colus: Colus
+$Extatica: Extatica
+$h2FontSize: 52px
+$pFontSize: 25px
+
+@mixin mentor()
+    display: flex
+    margin-bottom: 100px
+    flex-wrap: wrap
+    justify-content: space-around
+    .allInformation
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        .photo
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 35%
+            @media screen and ( max-width: 1200px )
+                width: 100%
+                margin: 0 0 80px 0
+            img
+                @media screen and ( max-width: 630px )
+                    width: 80%
+                    
+        .info
+            width: 45%
+            @media screen and ( max-width: 1200px )
+                width: 80%
+                
+            h2
+                font-family: $Colus
+                font-size: $h2FontSize
+                white-space: nowrap
+                @media screen and ( max-width: 1450px )
+                    font-size: 45px
+                @media screen and ( max-width: 750px )
+                    font-size: 35px
+                    white-space: normal
+            p
+                font-family: $Extatica
+                font-size: $pFontSize
+                @media screen and ( max-width: 750px )
+                    font-size: 20px
+            .hoby
+                margin: 95px 0 36px
+                span
+                    text-decoration: underline
+    .fishes
+        margin-top: 100px
+        display: flex
+        justify-content: center
+        img
+            @media screen and ( max-width: 750px )
+                width: 80%
+
+@mixin leftPhoto()
+    .allInformation
+        flex-direction: row
+        .photo
+            img
+                box-shadow: -10px -10px 5px #808080
+
+@mixin rightPhoto()
+    .allInformation
+        flex-direction: row-reverse
+        .photo
+            img
+                box-shadow: 10px 10px 5px #808080
+                @media screen and ( max-width: 1200px )
+                    box-shadow: -10px -10px 5px #808080
+
+
+.mentorWrapper
+    width: 80%
+    margin: 100px auto 0
+    .leftPhoto
+        @include mentor()
+        @include leftPhoto()
+    .rightPhoto
+        @include mentor()
+        @include rightPhoto()
+        

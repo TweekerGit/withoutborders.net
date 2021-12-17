@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WithoutBorders.Data.Entities.Expectation>
+
+@{
+    ViewBag.controller = "Master";
+    ViewBag.action = "All";
+    ViewBag.Title = "Очікування";
+}
+
+
+<div class="expectations">
+    <div class="title">
+        <p class="whatIsIt">Що на вас чекає?</p>
+    </div>
+    <div class="elements">
+        @if (Model.Any())
+        {
+            foreach (var expectation in Model)
+            {
+                <div class="elementt">
+                    <p>@expectation.Expression</p>
+                    <div class="but">
+                        <a asp-controller="Expectation" asp-action="Edit" asp-route-codeword="@expectation.Expression" asp-route-redirectId="@ViewBag.returnId" asp-route-mainId="@ViewBag.MainId">Змінити</a>
+                        <a onclick="return confirm('Ви впевнені, що хочете видалити це?');" 
+                           asp-controller="Expectation" asp-action="Delete" asp-route-idDelete="@expectation.Id" asp-route-redirectId="@ViewBag.Id">Видалити</a>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="elButton">
+        <a asp-controller="Expectation" asp-action="Create" asp-route-mainId="@ViewBag.MainId" asp-route-redirectId="@ViewBag.returnExpId">Добавити елемент</a>
+    </div>
+</div>

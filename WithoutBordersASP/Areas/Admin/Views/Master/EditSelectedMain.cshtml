@@ -1,0 +1,17 @@
+﻿@model WithoutBorders.Data.Entities.SelectedMain
+
+@{
+    ViewBag.Title = "Вибрати Головну Сторінку";
+}
+
+<div class="selectedEdit">
+    <form asp-area="Admin" asp-controller="Master" asp-action="EditSelectedPost" method="POST">
+        @using (Html.BeginForm())
+        {
+            <p>Виберіть ID головної сторінки:</p>
+            <input type="hidden" asp-for="Id">
+            @Html.DropDownListFor(model => model.MainId, ViewData["mains"] as SelectList)
+            <button type="submit">Готово</button>
+        }
+    </form>
+</div>

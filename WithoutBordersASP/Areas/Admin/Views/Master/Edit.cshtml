@@ -1,0 +1,78 @@
+﻿@model WithoutBordersASP.Models.Dto.MainEntityDto
+
+@{
+    ViewBag.controller = "Master";
+    ViewBag.action = "All";
+    ViewBag.Title = "Редагувати Головну Сторінку";
+}
+
+<div class="mainEdit">
+    <div class="line">
+        <form asp-area="Admin" asp-controller="Master" asp-action="EditPost" method="post">
+            <div asp-validation-summary="All"></div>
+            <div class="data">
+                <div class="up">
+                    <input asp-for="Id" type="hidden">
+                    <div class="item">
+                        <p class="whatIsIt">Лівий заголовок:</p>
+                        <input asp-for="LeftTitle" type="text">
+                    </div>
+                    <div class="item">
+                        <p class="whatIsIt">Правий заголовок:</p>
+                        <input asp-for="RightTitle" type="text">
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="item">
+                        <p class="whatIsIt">Про нас:</p>
+                        <textarea asp-for="About" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="item">
+                        <p class="whatIsIt">Ліве фото:</p>
+                        <input asp-for="LeftTitlePhoto" type="text">
+                        <img src="@Model.LeftTitlePhoto" alt="left">
+                    </div>
+                    <div class="item">
+                        <p class="whatIsIt">Праве фото:</p>
+                        <input asp-for="RightTitlePhoto" type="text">
+                        <img src="@Model.RightTitlePhoto" alt="right">
+                    </div>
+                    <div class="item">
+                        <p class="whatIsIt">Фото про нас:</p>
+                        <input asp-for="AboutPhoto" type="text">
+                        <img src="@Model.AboutPhoto" alt="about">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="expectations">
+                <div class="title">
+                    <p class="whatIsIt">Що на вас чекає?</p>
+                </div>
+                <div class="elements">
+                    @if (Model.Expectations.Any())
+                    {
+                        for (int i = 0; i < Model.Expectations.Count; i++)
+                        {
+                            <div class="element">
+                                <p>@Model.Expectations[i].Expression</p>
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="elButtons">
+                    <div class="addElement">
+                        <a asp-controller="Expectation" asp-action="ById" asp-route-id="@Model.Id" asp-route-returnId="@ViewBag.returnId">Змінити список</a>
+                    </div>
+                </div>
+            </div>
+            <div class="editButton">
+                <div>
+                    <button type="submit">Готово</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+﻿<!-- Шапка адміна -->
+<header>
+    <div class="logo">
+        <a asp-area="Admin" asp-controller="Main" asp-action="Index">
+            <p>Панель адміністратора</p>
+            <img src="~/images/hello.png" alt="helo">
+        </a>
+    </div>
+    @if (ViewBag.action is not null && ViewBag.returnId is null)
+    {
+        <div class="back">
+            <a asp-controller="@ViewBag.controller" asp-action="@ViewBag.action" >Повернутися</a>
+        </div>
+    }
+    @if(ViewBag.action is not null && ViewBag.returnId is not null)
+    {
+        <div class="back">
+            <a asp-controller="@ViewBag.controller" asp-action="@ViewBag.action" asp-route-id="@ViewBag.returnId" >Повернутися</a>
+        </div>
+    }
+    <hr>
+</header>

@@ -1,0 +1,12 @@
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\bin\Release\net5.0\WithoutBorders.Core.deps.json
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\bin\Release\net5.0\WithoutBorders.Core.dll
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\bin\Release\net5.0\ref\WithoutBorders.Core.dll
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\bin\Release\net5.0\WithoutBorders.Core.pdb
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\obj\Release\net5.0\WithoutBorders.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\obj\Release\net5.0\WithoutBorders.Core.AssemblyInfoInputs.cache
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\obj\Release\net5.0\WithoutBorders.Core.AssemblyInfo.cs
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\obj\Release\net5.0\WithoutBorders.Core.csproj.CoreCompileInputs.cache
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\obj\Release\net5.0\WithoutBorders.Core.dll
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\obj\Release\net5.0\ref\WithoutBorders.Core.dll
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\obj\Release\net5.0\WithoutBorders.Core.pdb
+E:\Програмування\ASP .Net\2021\WithoutBordersASP\WithoutBorders.Core\obj\Release\net5.0\WithoutBorders.Core.csproj.AssemblyReference.cache

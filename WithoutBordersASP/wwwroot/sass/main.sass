@@ -1,0 +1,340 @@
+@font-face 
+    font-family: Extatica
+    src: url(../fonts/Extatica-Light.ttf) format("truetype")
+
+
+@font-face 
+    font-family: Colus
+    src: url(../fonts/Colus-Regular.ttf) format("truetype")
+
+$font25px: 25px
+$h2FontSize: 52px
+$h2FontSizeMin: 35px
+$Colus: Colus
+$Extatica: Extatica
+$font30px: 30px
+$default_block_margin: 150px
+$font900px: 25px
+    
+
+body
+    font-family: $Extatica
+    overflow-x: hidden  
+    
+@import _header.sass
+ 
+.wrapper
+    width: 75%
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    .presentation           
+        margin-top: 20px 
+        width: 100%
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        .left-block
+            width: 30%
+            h2
+                margin-top: 30px
+                margin-left: 85px
+                margin-bottom: 70px
+            margin-bottom: 70px
+            white-space: nowrap
+            img
+                width: 400px
+        .right-block
+            width: 30%
+            h2
+                margin-right: 20px 
+                margin-top: 70px
+                white-space: nowrap
+            img
+                width: 400px
+        div
+            width: 40%
+            display: flex
+            flex-direction: column
+            align-items: center
+            h2
+                font-family: $Colus
+                font-size: $h2FontSize
+                text-align: center
+                @media screen and ( max-width: 900px )
+                    font-size: 40px
+                @media screen and ( max-width: 435px )
+                    font-size: 30px
+                    
+        canvas
+            margin: 125px 0
+        @media screen and ( max-width: 1250px )
+            .left-block, .right-block, div
+                width: 100%
+                img
+                    width: 70%
+            .left-block
+                h2
+                    margin: 45px 0 85px
+                margin-bottom: 0
+                img
+                    text-align: center
+            canvas
+                margin: 0
+            .right-block
+                h2
+                    margin: 85px 0 0
+        @media screen and ( max-width: 600px )
+            width: 140%
+            
+    .about  
+        width: 85%
+        display: flex
+        justify-content: center
+        margin-top: 60px
+        .about-text
+            width: 40%
+            padding-top: 150px 
+            margin-left: 50px 
+            h2
+                margin: 0 0 40px 0
+                font-family: $Colus
+                font-size: $h2FontSize
+                @media screen and ( max-width: 900px )
+                    font-size: $h2FontSizeMin
+                @media screen and ( max-width: 435px )
+                    font-size: 30px
+            p
+                font-size: $font25px
+                margin: 20px 0
+                @media screen and ( max-width: 900px )
+                    font-size: $font900px
+        .about-image
+            display: flex
+            justify-content: flex-end
+            width: 60%
+        @media screen and ( max-width: 1450px  )
+            width: 100%
+        @media screen and ( max-width: 1250px )
+            flex-direction: column-reverse
+            flex-wrap: wrap
+            .about-image
+                width: 100%
+                justify-content: center
+            .about-text
+                margin: 0
+                width: 100%
+                p
+                    text-align: center
+                    @media screen and ( max-width: 900px )
+                        font-size: $font900px
+                h2
+                    text-align: center
+                    margin: 0
+        @media screen and ( max-width: 980px )
+            .about-image
+                img
+                    width: 80%
+
+    .camp-plan
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: $default_block_margin
+        h2
+            width: 75%
+            text-align: center
+            font-family: $Colus
+            font-size: $h2FontSize
+            @media screen and ( max-width: 900px )
+                font-size: $h2FontSizeMin
+            @media screen and ( max-width: 435px )
+                font-size: 30px
+        ul
+            margin: 85px 0 0
+            @media screen and ( max-width: 900px )
+                margin: 30px 0 0
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            li
+                width: 30%
+                font-size: $font30px
+                margin: 30px 70px
+                @media screen and ( max-width: 900px )
+                    font-size: $font900px
+                    margin: 30px 0
+                @media screen and ( max-width: 650px )
+                    font-size: 20px
+                    
+        @media screen and ( max-width: 1250px )
+            ul
+                .noLi
+                    display: none
+                li
+                    width: 100%
+                    margin-left: 30%
+        @media screen and ( max-width: 1050px )
+            ul
+                li
+                    margin-left: 25%
+        @media screen and ( max-width: 450px )
+            ul
+                li
+                    margin-left: 20%
+            
+            
+    .form
+        width: 85%
+        margin-top: $default_block_margin
+        .form-title
+            margin-bottom: 100px
+            display: flex
+            justify-content: space-between
+            h2
+                font-size: $h2FontSize
+                font-family: $Colus
+                white-space: nowrap
+                @media screen and ( max-width: 900px )
+                    font-size: $h2FontSizeMin
+                @media screen and ( max-width: 435px )
+                    font-size: 30px
+            p
+                white-space: nowrap
+                margin-right: 70px
+                align-self: flex-end
+                font-size: $font30px
+                @media screen and ( max-width: 900px )
+                    font-size: $font900px
+        form
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            .form-element
+                display: flex
+                flex-direction: column
+                margin: 20px 0
+                width: 40%
+                @media screen and ( max-width: 600px )
+                    .alergy
+                        white-space: normal
+                label
+                    white-space: nowrap
+                    display: block
+                    font-size: $font25px    
+                    margin: 0 0 10px 0
+                textarea
+                    font-size: $font25px
+                    font-family: $Extatica
+                    border-radius: 0
+                    background: #E9E9E9;
+                    border: 0
+                    height: 150px
+                    outline: none
+                    width: 440px
+                    padding-left: 5px
+                    resize: none
+                select
+                    font-size: $font25px
+                    font-family: $Extatica
+                    border-radius: 0
+                    background: #E9E9E9;
+                    border: 0
+                    outline: none
+                    width: 447px
+                    padding-left: 5px
+                    height: 42px
+                    background: url(../images/strelka.png) no-repeat right #E9E9E9
+                    -webkit-appearance: none
+                input
+                    font-size: $font25px
+                    font-family: $Extatica
+                    border-radius: 0
+                    background: #E9E9E9;
+                    border: 0
+                    height: 40px
+                    padding-left: 5px
+                    width: 440px
+                    outline: none
+                button
+                    font-family: $Colus
+                    font-size: $font25px
+                    background: black
+                    color: white
+                    height: 68px
+                    width: 448px
+                    margin-top: 42px
+        @media screen and ( max-width: 1680px )
+            .form-title
+                flex-wrap: wrap
+                p
+                    margin: 0
+                    margin-top: 20px
+                h2, p
+                    width: 100%
+                    text-align: center
+        @media screen and ( max-width: 1500px )
+            display: flex
+            flex-direction: column
+            align-items: center
+            .form-title
+                margin: 0 0 30px
+            form
+                width: 80%
+                flex-wrap: wrap
+                .form-element
+                    width: 100%
+                    display: flex
+                    align-items: center
+                    input, textarea, select, button
+                        width: 100%
+                label
+                    align-self: flex-start
+        @media screen and ( max-width: 560px )
+            form
+                width: 100%
+            
+    .follow-us 
+        flex-direction: column
+        justify-content: center
+        margin-top: $default_block_margin
+        margin-bottom: 100px 
+        @media screen and ( max-width: 900px )
+            margin-bottom: 70px 
+        h2
+            text-align: center
+            font-family: $Colus
+            font-size: $h2FontSize
+            @media screen and ( max-width: 900px )
+                font-size: $h2FontSizeMin
+            @media screen and ( max-width: 435px )
+                font-size: 30px
+        .subscribe
+            margin-top: 100px
+            @media screen and ( max-width: 900px )
+                margin-top: 50px 
+            width: 100%
+            display: flex
+            justify-content: center
+            .social
+                margin: 0 50px
+                @media screen and ( max-width: 900px )
+                    img
+                        width: 60px
+    
+
+@import _footer.sass
+
+.sticky
+  position: fixed
+  top: 0
+  width: 100%
+  margin: 0 auto
+
+//-----------------Page of Mentors-----------------//
+@import _mentors.sass
+
+//-----------------Photos Page-----------------//
+@import _photos.sass

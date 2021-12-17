@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="fonts/Extatica-Light.otf">
+    <title>Without</title>
+</head>
+<body>
+    
+    <!-- Шапка сайту -->
+    <header id="header">
+            <div class="burger">
+                <div class="content">
+                    <div class="logo"><img src="images/Logo.svg" alt="logo"></div>
+                    <div class="lines"><img src="images/threeLines.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="neBurger">
+                <div class="header-element"><a class="navElement">Що на вас чекає?</a></div>
+                <div class="header-element"><a class="navElement">Хочу з вами</a></div>
+                <div class="logo"><img src="images/Logo.svg" alt="logo"></div>
+                <div class="header-element mainList" ><a class="navElement" id="toClick">Попередні роки</a>
+                    <ul class="years__hidden">
+                        <li>
+                            <p class="year"><span>2018</span>
+                                <div class="list__element__hidden">
+                                    <a href="photos.html">Локачі</a>
+                                    <a href="#">Павловичі</a>
+                                    <a href="#">Дорогиничі</a>
+                                </div>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-element"><a href="mentors.html" class="navElement">Наставники</a></div>
+            </div>
+    </header>
+
+    <!-- Основний контент -->
+    <div class="wrapper">
+
+        <!-- Початковий блок з Землею -->
+        <div class="presentation">
+            <div class="left-block">
+                <h2 style="white-space:nowrap">ДИТЯЧЕ ДОЗВІЛЛЯ</h2>
+                <img src="images/left-presentation.png" alt="left-block">
+            </div>
+            <div class="animka"><canvas class="earth"></canvas></div>
+            <div class="right-block">
+                <img src="images/right-presentation.png" alt="right-block">
+                <h2>БЕЗ КОРДОНІВ</h2>
+            </div>
+        </div>
+
+        <!-- Про нас -->
+        <div class="about">
+            <div class="about-text">
+                <h2>ПРО НАС</h2>
+                <p>З іншого боку склалася структура організації тягне за собою процес впровадження і модернізації моделі розвитку.</p>
+                <p>Товариші! сформована структура організації тягне за собою процес впровадження і модернізації нових пропозицій.</p>
+                <p>Повсякденна практика показує, що склалася структура організації вимагають визначення та уточнення істотних фінансових і адміністративних умов.</p>
+            </div>
+            <div class="about-image"><img src="images/EvaCross.svg" alt="cross"></div>
+        </div>
+
+        <!-- План табору -->
+        <div class="camp-plan">
+            <h2>ЩО ВАС ЧЕКАЄ В НАШОМУ ТАБОРІ?</h2>
+            <ul>
+                <li>&#9679;  Щоденні розваги</li>
+                <li>&#9679;  День обливання</li>
+                <li>&#9679;  Вечори біля багаття</li>
+                <li>&#9679;  Бесіди з наставниками</li>
+                <li>&#9679;  Пісні</li>
+                <li>&#9679;  Новий день - нова країна!</li>
+                <li class="noLi"></li>
+                <li>&#9679;  Та багато чого іншого!</li>
+            </ul>
+        </div>
+
+        <!-- Анкета реєстрації -->
+        <div class="form">
+            <div class="form-title">
+                <h2>ХОЧЕШ З НАМИ?<br>ЗАПОВНЮЙ АНКЕТУ!*</h2>
+                <p>*тільки для слухняних дітей<br>  старше 5 років</p>
+            </div>
+            <form action="">
+                <div class="form-element">
+                    <label for="firstName">Ім'я</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-element">
+                    <label for="lastName">Прізвище</label>
+                    <input type="text">
+                </div>
+                
+                <div class="form-element">
+                    <label for="sex">Стать</label>
+                    <select name="sex" id="sex">
+                        <option value="male">Хлопчик</option>
+                        <option value="female">Дівчинка</option>
+                    </select>
+                </div>
+                
+                <div class="form-element">
+                    <label for="age">Вік</label>
+                    <input type="text">
+                </div>
+                <div class="form-element">
+                    <label for="alergy" class="alergy">Маєш алергію? Напиши нам про це!</label>
+                    <textarea name="alergy" id="alergy" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-element">
+                    <label for="number">Номер телефону</label>
+                    <input type="tel">
+                    <button>ВПЕРЕД!</button>
+                </div>
+                <div class="form-element">
+                </div>
+            </form>
+        </div>
+
+        <!-- Соціальні мережі -->
+        <div class="follow-us">
+            <h2>СЛІДКУЙ ЗА НАМИ В СОЦМЕРЕЖАХ!</h2>
+            <div class="subscribe">
+                <div class="social"><img src="images/facebook.svg" alt="facebook"></div>
+                <div class="social"><img src="images/instagram.svg" alt="instagram"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Підвал сайту-->
+    <footer>
+        <div class="footer--logo">
+            <div><img src="images/Logo.svg" alt="logo"></div>
+            <h2>БЕЗ КОРДОНІВ</h2>
+        </div>
+        <div class="footer">
+            <div class="content--line">
+                <img src="images/facebook.svg" alt="logo">
+                <a href="#">Хочу в табір</a>
+                <a href="#">Наставники</a>
+            </div>
+            <div class="content--line">
+                <img src="images/instagram.svg" alt="logo">
+                <a href="#">Що на вас чекає?</a>
+                <a href="#">Про нас</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="js/planet.js"></script>
+    <script src="js/menu.js"></script>
+
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
+
+</body>
+</html>

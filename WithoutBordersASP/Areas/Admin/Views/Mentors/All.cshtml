@@ -1,0 +1,45 @@
+﻿@model IEnumerable<WithoutBorders.Data.Entities.Mentor>
+
+@{
+    ViewBag.controller = "Main";
+    ViewBag.action = "Index";
+    ViewBag.Title = "Наставники";
+}
+
+<!-- Наставники всі -->
+<div class="mentors">
+    <div class="addMentor">
+        <a asp-controller="Mentors" asp-action="Create">Добавити наставника</a>
+    </div>
+    <div class="mentor__one">
+    @if (Model.Any())
+    {
+        foreach (var mentor in Model)
+        {
+            <div class="one">
+                <div class="one__element">
+                    <p class="whatIsIt">Ім'я та прізвище:</p>
+                    <p>@mentor.Name</p>
+                </div>
+                <div class="one__element">
+                    <p class="whatIsIt">Хоббі:</p>
+                    <p>@mentor.Hobby</p>
+                </div>
+                <div class="one__element">
+                    <p class="whatIsIt">Опис:</p>
+                    <p>@mentor.About</p>
+                </div>
+                <div class="one__element">
+                    <p class="whatIsIt">Фото:</p>
+                    <img src="@mentor.PhotoUrl" alt="wrong">
+                </div>
+                <div class="one__button">
+                    <a asp-controller="Mentors" asp-action="Edit" asp-route-id="@mentor.Id">Змінити</a>
+                    <a onclick="return confirm('Ви впевнені, що хочете видалити наставника?');"
+                       asp-controller="Mentors" asp-action="Delete" asp-route-id="@mentor.Id">Видалити</a>
+                </div>
+            </div>
+        }
+    }
+    </div>
+</div>

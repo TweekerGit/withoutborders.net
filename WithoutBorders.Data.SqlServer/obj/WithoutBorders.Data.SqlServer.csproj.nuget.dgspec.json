@@ -1,0 +1,204 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Data.SqlServer\\WithoutBorders.Data.SqlServer.csproj": {}
+  },
+  "projects": {
+    "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Core\\WithoutBorders.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Core\\WithoutBorders.Core.csproj",
+        "projectName": "WithoutBorders.Core",
+        "projectPath": "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Core\\WithoutBorders.Core.csproj",
+        "packagesPath": "C:\\Users\\tweeker\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tweeker\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Data.Entities\\WithoutBorders.Data.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Data.Entities\\WithoutBorders.Data.Entities.csproj",
+        "projectName": "WithoutBorders.Data.Entities",
+        "projectPath": "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Data.Entities\\WithoutBorders.Data.Entities.csproj",
+        "packagesPath": "C:\\Users\\tweeker\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Data.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tweeker\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Core\\WithoutBorders.Core.csproj": {
+                "projectPath": "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Core\\WithoutBorders.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Data.SqlServer\\WithoutBorders.Data.SqlServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Data.SqlServer\\WithoutBorders.Data.SqlServer.csproj",
+        "projectName": "WithoutBorders.Data.SqlServer",
+        "projectPath": "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Data.SqlServer\\WithoutBorders.Data.SqlServer.csproj",
+        "packagesPath": "C:\\Users\\tweeker\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Data.SqlServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tweeker\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Data.Entities\\WithoutBorders.Data.Entities.csproj": {
+                "projectPath": "D:\\Programming\\ASP .Net\\2021\\WithoutBordersASP\\WithoutBorders.Data.Entities\\WithoutBorders.Data.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

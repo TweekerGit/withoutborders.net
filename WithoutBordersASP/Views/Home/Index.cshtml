@@ -1,0 +1,117 @@
+﻿@model WithoutBordersASP.Models.MainsKidModel
+
+@{
+    ViewBag.Title = "Дозвілля";
+}
+
+<div class="wrapper">
+    <!-- Початковий блок з Землею -->
+    <div class="presentation">
+        <div class="left-block">
+            <h2 style="white-space:nowrap">@Model._main.LeftTitle</h2>
+            <img src="@Model._main.LeftTitlePhoto" alt="left-block">
+        </div>
+        <div class="animka">
+            <canvas class="earth"></canvas>
+        </div>
+        <div class="right-block">
+            <img src="@Model._main.RightTitlePhoto" alt="right-block">
+            <h2>@Model._main.RightTitle</h2>
+        </div>
+    </div>
+
+    <!-- Про нас -->
+    <div class="about" id="about">
+        <div class="about-text">
+            <h2>ПРО НАС</h2>
+            <p>@Model._main.About</p>
+        </div>
+        <div  class="about-image">
+            <img src="@Model._main.AboutPhoto" alt="cross">
+        </div>
+    </div>
+    <div style="visibility: hidden" id="willBe"></div>
+    
+    <!-- План табору -->
+    <div class="camp-plan">
+        <h2>ЩО ВАС ЧЕКАЄ В НАШОМУ ТАБОРІ?</h2>
+        <ul>
+            @if (Model._main.Expectations.Any())
+            {
+                foreach (var expectation in Model._main.Expectations)
+                {
+                    <li>&#9679; @expectation.Expression</li>
+                }
+            }
+        </ul>
+        <div id="form"></div>
+    </div>
+
+    <!-- Анкета реєстрації -->
+    <div class="form" >
+        <div class="form-title">
+            <h2>ХОЧЕШ З НАМИ?<br>ЗАПОВНЮЙ АНКЕТУ!*</h2>
+            <p>*тільки для слухняних дітей<br> старше 5 років</p>
+        </div>
+        <form asp-controller="Home" asp-action="AddKid" method="POST">
+            <div class="form-element">
+                <label>Ім'я</label>
+                <input asp-for="@Model._kid.Name" type="text">
+            </div>
+
+            <div class="form-element">
+                <label>Прізвище</label>
+                <input asp-for="@Model._kid.Surname" type="text">
+            </div>
+
+            <div class="form-element">
+                <label>Стать</label>
+                <select asp-for="@Model._kid.Sex" id="sex">
+                    <option value="Male">Хлопчик</option>
+                    <option value="Female">Дівчинка</option>
+                </select>
+            </div>
+
+            <div class="form-element">
+                <label>Вік</label>
+                <input asp-for="@Model._kid.Age" value="" type="text"> 
+            </div>
+            <div class="form-element">
+                <label class="alergy">Маєш алергію? Напиши нам про це!</label>
+                <textarea asp-for="@Model._kid.Alergy" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-element">
+                <label for="number">Номер телефону</label>
+                <input asp-for="@Model._kid.Number" type="tel">
+                <button onclick="return alert('Ти зареєструвався, Вітаю :)');" type="submit">ВПЕРЕД!</button>
+            </div>
+            <div class="form-element">
+            </div>
+        </form>
+    </div>
+
+    <!-- Соціальні мережі -->
+    <div class="follow-us">
+        <h2>СЛІДКУЙ ЗА НАМИ В СОЦМЕРЕЖАХ!</h2>
+        <div class="subscribe">
+            <div class="social">
+                <a target="_blank" href="https://www.facebook.com/groups/487668965006302">
+                    <img src="images/facebook.svg" alt="facebook">
+                </a>
+            </div>
+            <div class="social">
+                <a target="_blank" href="https://www.instagram.com/tabir_lokachi/">
+                    <img src="images/instagram.svg" alt="instagram">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Script{
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="~/js/planet.js"></script>
+    <script src="~/js/scroll.js"></script>
+
+}

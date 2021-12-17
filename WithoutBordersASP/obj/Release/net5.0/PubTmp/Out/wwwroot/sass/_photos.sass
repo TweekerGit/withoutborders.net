@@ -1,0 +1,49 @@
+$h2FontSize: 52px
+$Colus: Colus
+$Extatica: Extatica
+$pFontSize: 25px
+
+
+@mixin fontProperty($size, $font)
+    font-size: $size
+    font-family: $font
+    
+.main
+    .campInfo
+        margin: 30px
+        display: flex
+        align-items: center
+        @media screen and ( max-width: 750px )
+            flex-wrap: wrap
+        div
+            display: flex
+            @media screen and ( max-width: 750px )
+                width: 100%
+                margin-bottom: 20px 
+                
+        .place, .year
+            margin: 0 20px
+            @include fontProperty($h2FontSize, $Colus)
+            @media screen and ( max-width: 850px )
+                @include fontProperty($size: 40px, $font: $Colus)
+            @media screen and ( max-width: 400px )
+                margin: 0 10px 0 20px
+                @include fontProperty($size: 30px, $font: $Colus)
+                
+        .season
+            margin: 0 20px
+            @include fontProperty($pFontSize, $Extatica )
+            @media screen and ( max-width: 850px )
+                @include fontProperty($size: 20px, $font: $Extatica)
+            @media screen and ( max-width: 400px )
+                @include fontProperty($size: 15px, $font: $Extatica)
+    .photoLines
+        display: flex
+        justify-content: space-between
+        .line
+            display: flex
+            flex-direction: column
+            width: 33%
+            img
+                width: 100%
+                margin: 1%

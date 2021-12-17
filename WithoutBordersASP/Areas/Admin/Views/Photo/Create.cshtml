@@ -1,0 +1,18 @@
+﻿@model WithoutBorders.Data.Entities.Photo
+
+@{
+    ViewBag.controller = "Photo";
+    ViewBag.action = "One";
+    ViewBag.Id = ViewBag.returnId;
+    ViewBag.Title = "Добавити Фотографію";
+}
+
+<!-- Добавити фото -->
+<div class="photoAdd">
+    <form asp-area="Admin" asp-controller="Photo" asp-action="CreatePost" asp-route-redirectId="@ViewBag.CampId" method="POST">
+        <p>Добавити фото:</p>
+        <input asp-for="CampId" value="@ViewBag.CampId" type="hidden">
+        <input asp-for="Url" type="text">
+        <button type="submit">Готово</button>
+    </form>
+</div>

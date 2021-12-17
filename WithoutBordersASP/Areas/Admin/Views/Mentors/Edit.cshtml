@@ -1,0 +1,36 @@
+﻿@model WithoutBorders.Data.Entities.Mentor
+
+@{
+    ViewBag.controller = "Mentors";
+    ViewBag.action = "All";
+    ViewBag.Title = "Змінити Наставника";
+}
+
+<!-- Редагувати наставників-->
+<div class="mentorsEdit">
+    <form asp-area="Admin" asp-controller="Mentors" asp-action="EditPost" method="POST">
+        <div class="mentor">
+            <input asp-for="Id" type="hidden">
+            <div class="mentor__element">
+                <p class="whatIsIt">Ім'я та прізвище:</p>
+                <input asp-for="Name" type="text">
+            </div>
+            <div class="mentor__element">
+                <p class="whatIsIt">Хоббі:</p>
+                <input asp-for="Hobby" type="text">
+            </div>
+            <div class="mentor__element">
+                <p class="whatIsIt">Опис:</p>
+                <textarea asp-for="About" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="mentor__element">
+                <p class="whatIsIt">Фото:</p>
+                <input asp-for="PhotoUrl" type="text">
+                <img src="@Model.PhotoUrl" alt="">
+            </div>
+            <div class="mentor__button">
+                <button type="submit">Готово</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,54 @@
+﻿@model WithoutBordersASP.Models.Dto.MainEntityDto
+
+@{
+    ViewBag.controller = "Master";
+    ViewBag.action = "All";
+    ViewBag.Title = "Створити Головну Сторінку";
+}
+
+<div class="mainEdit">
+    <div class="line">
+        <form asp-area="Admin" asp-controller="Master" asp-action="EditPost" method="post">
+            <div asp-validation-summary="All"></div>
+            <div class="data">
+                <div class="up">
+                    <input asp-for="Id" type="hidden">
+                    <div class="item">
+                        <p class="whatIsIt">Лівий заголовок:</p>
+                        <input asp-for="LeftTitle" type="text">
+                    </div>
+                    <div class="item">
+                        <p class="whatIsIt">Правий заголовок:</p>
+                        <input asp-for="RightTitle" type="text">
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="item">
+                        <p class="whatIsIt">Про нас:</p>
+                        <textarea name="" asp-for="About" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="item">
+                        <p class="whatIsIt">Ліве фото:</p>
+                        <input asp-for="LeftTitlePhoto" type="text">
+                    </div>
+                    <div class="item">
+                        <p class="whatIsIt">Праве фото:</p>
+                        <input asp-for="RightTitlePhoto" type="text">
+                    </div>
+                    <div class="item">
+                        <p class="whatIsIt">Фото про нас:</p>
+                        <input asp-for="AboutPhoto" type="text">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="editButton">
+                <div>
+                    <button type="submit">Готово</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+﻿@model List<WithoutBordersASP.Models.Dto.MainEntityDto>
+
+@{
+    ViewBag.Title = "Головні Сторінки";
+}
+
+@{
+    ViewBag.controller = "Main";
+    ViewBag.action = "Index";
+}
+<!-- Головні карточки -->
+<div class="mainEdit">
+    <div class="addMain">
+        <div>
+            <a asp-controller="Master" asp-action="Create">Добавити карточку</a>
+            <a asp-controller="Master" asp-action="EditSelectedMain">Вибрати головну сторінку по ID</a>
+        </div>
+    </div>
+    @if (Model.Any())
+    {
+        foreach (var main in Model)
+        {
+            <div class="line">
+                <div class="data">
+                    <div class="up">
+                        <div class="id">
+                            <p class="whatIsIt">ID:</p>
+                            <p>@main.Id</p>
+                        </div>
+                        <div class="item">
+                            <p class="whatIsIt">Лівий заголовок:</p>
+                            <p>@main.LeftTitle</p>
+                        </div>
+                        <div class="item">
+                            <p class="whatIsIt">Правий заголовок:</p>
+                            <p>@main.RightTitle</p>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="item">
+                            <p class="whatIsIt">Про нас:</p>
+                            <p>@main.About</p>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <div class="item">
+                            <p class="whatIsIt">Ліве фото:</p>
+                            <img src="@main.LeftTitlePhoto" alt="left">
+                        </div>
+                        <div class="item">
+                            <p class="whatIsIt">Праве фото:</p>
+                            <img src="@main.RightTitlePhoto" alt="right">
+                        </div>
+                        <div class="item">
+                            <p class="whatIsIt">Фото про нас:</p>
+                            <img src="@main.AboutPhoto" alt="about">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="expectations">
+                    <div class="title">
+                        <p class="whatIsIt">Що на вас чекає?</p>
+                    </div>
+                    <div class="elements">
+                        @if (main.Expectations.Any())
+                        {
+                            @foreach (var expectation in main.Expectations)
+                            {
+                                <div class="element">
+                                    <p>@expectation.Expression</p>
+                                </div>
+                            }
+                        }
+                    </div>
+                    <div class="elButtons">
+                        <div>
+                            <a asp-controller="Master" asp-action="Edit" asp-route-id="@main.Id">Змінити</a>
+                            <a onclick="return confirm('Ви впевнені, що хочете видалити головну сторінку?');"
+                               asp-controller="Master" asp-action="Delete" asp-route-deleteId="@main.Id">Видалити</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
