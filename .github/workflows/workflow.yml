@@ -3,7 +3,7 @@
 on: [ push ]
 
 env:
-  AZURE_WEBAPP_NAME: withoutborders
+  AZURE_WEBAPP_NAME: borders
   AZURE_WEBAPP_PACKAGE_PATH: './published'
   NETCORE_VERSION: '6.0.x'
 
